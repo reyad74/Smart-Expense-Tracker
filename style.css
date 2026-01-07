@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #2c3e50, #2b296dfd);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -27,15 +27,15 @@ body {
 
 .container {
     width: 400px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     padding: 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     margin: 20px;
     text-align: center;
     box-sizing: border-box;
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 h2 {
@@ -91,6 +91,9 @@ h2 {
     font-weight: 600;
     letter-spacing: 1px;
     margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .plus {
